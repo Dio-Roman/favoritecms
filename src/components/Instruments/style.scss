@@ -1,0 +1,144 @@
+td,
+th {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.instruments-table {
+  border-collapse: collapse;
+  width: -webkit-fill-available;
+  padding: 1em 5em;
+  background-color: #ffffff;
+  box-shadow: 8px 0px 19px 0px black;
+
+  &__title {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__head {
+    line-height: 4;
+  }
+
+  &__body {
+    line-height: 3;
+  }
+
+  &__sponsor-link {
+    text-decoration: none;
+    color: #2e4ed6;
+  }
+
+  &__logo-column {
+    text-align: center;
+  }
+
+  &__sponsor-star-column {
+    text-align: end;
+  }
+
+  &__head-item {
+    background-color: #ffffff;
+    border: none;
+    color: #999999;
+    font-size: small;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:checked + p {
+      color: #eaa3ab;
+    }
+    &:checked + p > .triangle {
+      display: inline-block;
+    }
+  }
+
+  &__logo {
+    width: 40px;
+  }
+}
+
+.head-item__title {
+  display: inline;
+}
+
+.triangle {
+  display: none;
+  position: relative;
+  color: #fff;
+
+  &_down {
+    &::after {
+      content: "";
+      position: absolute;
+      border: 10px solid transparent;
+      bottom: -10px;
+      border-top: 10px solid #eaa3ab;
+    }
+  }
+
+  &_up {
+    &::after {
+      content: "";
+      position: absolute;
+      border: 10px solid transparent;
+      bottom: 0px;
+      border-bottom: 10px solid #eaa3ab;
+    }
+  }
+}
+
+.sponsor {
+  display: inherit;
+  color: #999999;
+  font-size: 0.6em;
+  font-weight: bolder;
+  transform: rotate(-90deg);
+}
+
+td {
+  border-bottom: 1px solid #eeeaea;
+
+  &:nth-child(1) {
+    border-bottom: none;
+  }
+  &:nth-child(8) {
+    border-bottom: none;
+  }
+}
+
+.checkbox-custom {
+  display: flex;
+
+  &__input {
+    width: 0;
+    height: 0;
+
+    &:checked + .checkbox-custom__span {
+      background-image: url("../../assets/images/checkbox-true.png");
+    }
+  }
+
+  &__span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../assets/images/checkbox-false.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.loading {
+  color: #cb192e;
+  text-align: center;
+}

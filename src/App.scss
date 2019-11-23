@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+}
+
+.more-btn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 10px;
+  align-self: flex-end;
+  background-color: #fff;
+  border: 2px solid #cb192e;
+  color: #cb192e;
+  border-radius: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+
+  &:hover {
+    color: #c96773;
+    border-color: #c96773;
+  }
+}

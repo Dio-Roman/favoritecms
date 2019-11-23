@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+favorites_pattern.png
+instruments_pattern.png
 # testing
 /coverage
 
