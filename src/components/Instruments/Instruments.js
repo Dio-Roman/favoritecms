@@ -186,7 +186,11 @@ const Instruments = ({
             </tr>
           ))
         ) : (
-          <tr className="loading">Загрузка . . .</tr>
+          <tr>
+            <td className="loading">
+              <span>Загрузка . . .</span>
+            </td>
+          </tr>
         )}
       </tbody>
     </table>
