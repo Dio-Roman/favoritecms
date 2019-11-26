@@ -2,6 +2,10 @@
   "name": "favoritecms",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.2.0",
+    "node": "10.16.0"
+  },
   "dependencies": {
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
